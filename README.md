@@ -13,8 +13,9 @@ Interactive map markers,
 Google Maps directions,
 Dark mode,
 Save favorite places,
-Responsive design for mobile and desktop,
-Tech Stack,
+Responsive design for mobile and desktop
+
+Tech Stack : 
 HTML,
 CSS,
 JavaScript,
