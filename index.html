@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Nearby Essentials</title>
+
+  <link rel="stylesheet"
+    href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+    <link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+  <div class="topbar">
+
+  <div class="logo">
+
+    🧭 CityCompass
+
+  </div>
+
+</div>
+
+  <div class="search-box">
+
+    <input
+      type="text"
+      id="cityInput"
+      placeholder="Enter city name">
+
+    <button onclick="searchCity()">
+      Search
+    </button>
+
+  </div>
+
+  <div class="buttons">
+
+    <button onclick="findNearby('hospital')">
+      Hospitals
+    </button>
+
+    <button onclick="findNearby('restaurant')">
+      Restaurants
+    </button>
+
+    <button onclick="findNearby('atm')">
+      ATMs
+    </button>
+
+  </div>
+
+  <p id="loading"></p>
+
+  <!-- CONTAINER -->
+
+  <div class="container">
+
+    <div id="placesList"></div>
+
+    <div id="map"></div>
+
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+<button id="themeToggle" onclick="toggleTheme()">
+  🌙
+</button>
+
+</html>
